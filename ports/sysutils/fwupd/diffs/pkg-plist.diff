@@ -1,0 +1,49 @@
+--- pkg-plist.orig	2021-04-20 21:47:36 UTC
++++ pkg-plist
+@@ -1,4 +1,3 @@
+-bin/dfu-tool
+ bin/fwupdagent
+ bin/fwupdmgr
+ bin/fwupdtool
+@@ -61,15 +60,12 @@
+ include/fwupd-1/libfwupdplugin/fu-udev-device.h
+ include/fwupd-1/libfwupdplugin/fu-usb-device.h
+ include/fwupd-1/libfwupdplugin/fu-volume.h
+-lib/fwupd-plugins-3/libfu_plugin_analogix.so
+ lib/fwupd-plugins-3/libfu_plugin_bcm57xx.so
+ lib/fwupd-plugins-3/libfu_plugin_ccgx.so
+ lib/fwupd-plugins-3/libfu_plugin_colorhug.so
+ lib/fwupd-plugins-3/libfu_plugin_cpu.so
+ lib/fwupd-plugins-3/libfu_plugin_cros_ec.so
+ lib/fwupd-plugins-3/libfu_plugin_dell_dock.so
+-lib/fwupd-plugins-3/libfu_plugin_dfu.so
+-lib/fwupd-plugins-3/libfu_plugin_dfu_csr.so
+ lib/fwupd-plugins-3/libfu_plugin_ebitdo.so
+ lib/fwupd-plugins-3/libfu_plugin_ep963x.so
+ lib/fwupd-plugins-3/libfu_plugin_fastboot.so
+@@ -100,7 +96,7 @@
+ libdata/pkgconfig/fwupd.pc
+ libdata/pkgconfig/fwupdplugin.pc
+ libexec/fwupd/fwupd
+-man/man1/dfu-tool.1.gz
++libexec/fwupd/fwupd-detect-cet
+ man/man1/fwupdagent.1.gz
+ man/man1/fwupdmgr.1.gz
+ man/man1/fwupdtool.1.gz
+@@ -115,7 +111,6 @@
+ %%DATADIR%%/install_dell_bios_exe.py
+ %%DATADIR%%/metainfo/org.freedesktop.fwupd.remotes.lvfs-testing.metainfo.xml
+ %%DATADIR%%/metainfo/org.freedesktop.fwupd.remotes.lvfs.metainfo.xml
+-%%DATADIR%%/quirks.d/analogix.quirk
+ %%DATADIR%%/quirks.d/bcm57xx.quirk
+ %%DATADIR%%/quirks.d/ccgx-ids.quirk
+ %%DATADIR%%/quirks.d/ccgx.quirk
+@@ -123,8 +118,6 @@
+ %%DATADIR%%/quirks.d/cpu.quirk
+ %%DATADIR%%/quirks.d/cros-ec.quirk
+ %%DATADIR%%/quirks.d/dell-dock.quirk
+-%%DATADIR%%/quirks.d/dfu-csr.quirk
+-%%DATADIR%%/quirks.d/dfu.quirk
+ %%DATADIR%%/quirks.d/ebitdo.quirk
+ %%DATADIR%%/quirks.d/ep963x.quirk
+ %%DATADIR%%/quirks.d/fastboot.quirk
